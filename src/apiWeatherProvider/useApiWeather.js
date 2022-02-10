@@ -67,6 +67,7 @@ const useApiWeather = (options) => {
   const [state, dispatch] = useReducer(fetchReducer, initialState);
   const { data, errorMessage } = state;
   const [isLoading, setIsLoading] = useState(false);
+  // eslint-disable-next-line no-unused-vars
   const { lang, key, lon, lat } = options;
 
   const fetchData = async () => {
@@ -104,6 +105,7 @@ const useApiWeather = (options) => {
   };
   useEffect(() => {
     fetchData();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [lon, lat]);
   return { data, isLoading, errorMessage, fetchData };
 };

@@ -20,7 +20,7 @@ function App() {
 
   const myLocationLink = useMyLocation ? <div></div> : 
   <div class="my-location-link">
-    <a onClick={handleClick} style={{cursor: 'pointer'}}>Use my location</a>
+    <a href="google.co.uk" onClick={handleClick} style={{cursor: 'pointer'}}>Use my location</a>
   </div>;
 
   const location = useMyLocation ? 'Current location' : 'Vancouver, BC';

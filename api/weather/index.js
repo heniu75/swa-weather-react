@@ -6,7 +6,8 @@ module.exports = async function (context, req) {
     const endpoint = 'https://atlas.microsoft.com/weather/currentConditions/json';
 
     const params = {
-        'subscription-key': process.env.AZURE_MAPS_KEY,
+        // 'subscription-key': process.env.AZURE_MAPS_KEY,
+        'subscription-key': 'Gv35TwNFSUB3i-hFuR91zRDqYuROe2ruqZoT5TwltB4',
         'api-version': '1.0',
         'query': coordinates,
     };
